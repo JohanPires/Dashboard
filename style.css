@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9 !important;
+}
+
+/* ---------------------------------------------- */
+
+.login form {
+  width: 30% !important;
+  background: white;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  padding: 40px 50px !important;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #1864b8;
+  padding: 10px 50px;
+  color: orange;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header span {
+  color: white;
+}
+
+.main {
+  width: 100% !important;
+  position: absolute;
+  bottom: 0;
+  height: 85%;
+}
+
+.dashboard {
+  position: relative;
+  background: white;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 0 20px 0 0;
+  text-align: center;
+}
+
+.dashboard a {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+.dashboard h2 {
+  margin: 20px 0;
+}
+
+.dashboard #add {
+  position: relative;
+  bottom: auto;
+  left: auto;
+  transform: none;
+  width: 80%;
+  margin: 0 auto;
+  background: #1863b825 !important;
+  color: #1864b8;
+}
+
+/* ******* */
+
+.filter-container {
+  background: white;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 20px 0 0 0;
+}
+
+.filter-container h2 {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.filter-container input,
+.filter-container select {
+  border-radius: 20px;
+  border-color: #1864b8;
+}
+
+/* ------------------------- */
+
+.form-container {
+  /* position: absolute; */
+  /* top: -100%; */
+  /* z-index: 2; */
+  width: 80%;
+  height: 80%;
+  background: white;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 30px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.form-container::-webkit-scrollbar {
+  width: 0;
+}
+
+.describe-container textarea {
+  height: 100%;
+  resize: none;
+}
+.describe-container {
+  max-height: 80%;
+}
+
+#name,
+#valider {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#valider {
+  background: #1864b8;
+}
+
+#closeButton {
+  width: 3%;
+  border-radius: 50%;
+  padding: 5px !important;
+  margin-left: auto;
+  margin-right: 0;
+  color: #1864b8;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
+}
+
+#closeButton:hover {
+  transform: scale(1.05);
+}
+
+/* ----------------------------- */
+.travel-list {
+  height: 100%;
+  overflow-y: scroll !important;
+  overflow: hidden;
+}
+
+.travel-list::-webkit-scrollbar {
+  width: 0;
+}
+
+.travel-list .travel {
+  display: flex;
+  height: 25%;
+  background: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+.travel img {
+  max-height: 100%;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.travel .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.travel .text a {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+.travel .text .delete {
+  margin-left: 5px;
+}
+.travel .button-container {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.travel .text p {
+  font-size: 0.8rem;
+  max-height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.travel .text p::-webkit-scrollbar {
+  width: 0;
+}
